@@ -19,8 +19,7 @@ export function IdeaTab({ project, onUpdate, disabled }: IdeaTabProps) {
     narrative: idea?.narrative ?? "",
     whyExists: idea?.whyExists ?? "",
     whyWins: idea?.whyWins ?? "",
-    targetAudience: idea?.targetAudience ?? "",
-    comparableProjects: idea?.comparableProjects ?? "",
+    howItWorks: idea?.howItWorks ?? "",
   });
 
   // Update form when project changes
@@ -30,8 +29,7 @@ export function IdeaTab({ project, onUpdate, disabled }: IdeaTabProps) {
       narrative: idea?.narrative ?? "",
       whyExists: idea?.whyExists ?? "",
       whyWins: idea?.whyWins ?? "",
-      targetAudience: idea?.targetAudience ?? "",
-      comparableProjects: idea?.comparableProjects ?? "",
+      howItWorks: idea?.howItWorks ?? "",
     });
   }, [idea]);
 
@@ -107,32 +105,19 @@ export function IdeaTab({ project, onUpdate, disabled }: IdeaTabProps) {
         />
       </div>
 
-      {/* Target Audience */}
+      {/* How It Works */}
       <div className="space-y-2">
-        <label className="text-sm font-medium">Target Audience</label>
+        <label className="text-sm font-medium">How It Works</label>
         <Textarea
-          value={formData.targetAudience}
-          onChange={(e) => handleChange("targetAudience", e.target.value)}
-          onBlur={() => handleBlur("targetAudience")}
-          placeholder="Who is this for? Describe your ideal holder..."
-          rows={3}
-          disabled={disabled}
-        />
-      </div>
-
-      {/* Comparable Projects */}
-      <div className="space-y-2">
-        <label className="text-sm font-medium">Comparable Projects</label>
-        <Textarea
-          value={formData.comparableProjects}
-          onChange={(e) => handleChange("comparableProjects", e.target.value)}
-          onBlur={() => handleBlur("comparableProjects")}
-          placeholder="Similar tokens or projects for reference..."
-          rows={3}
+          value={formData.howItWorks}
+          onChange={(e) => handleChange("howItWorks", e.target.value)}
+          onBlur={() => handleBlur("howItWorks")}
+          placeholder="Explain the mechanics. How does the token/project actually function?"
+          rows={4}
           disabled={disabled}
         />
         <p className="text-xs text-muted-foreground">
-          What existing projects is this similar to? What can you learn from them?
+          The mechanics behind the project. Tokenomics, utility, or any unique features.
         </p>
       </div>
     </div>

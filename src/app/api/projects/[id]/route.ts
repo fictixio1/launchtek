@@ -93,8 +93,7 @@ export async function PATCH(
       "narrative",
       "whyExists",
       "whyWins",
-      "targetAudience",
-      "comparableProjects",
+      "howItWorks",
     ];
     ideaFields.forEach((field) => {
       if (field in body) {

@@ -73,8 +73,7 @@ export const projectIdeas = pgTable("project_ideas", {
   narrative: text("narrative"),
   whyExists: text("why_exists"),
   whyWins: text("why_wins"),
-  targetAudience: text("target_audience"),
-  comparableProjects: text("comparable_projects"),
+  howItWorks: text("how_it_works"),
   updatedAt: timestamp("updated_at", { withTimezone: true })
     .defaultNow()
     .notNull(),

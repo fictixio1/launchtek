@@ -29,8 +29,7 @@ export default function BoardPage() {
               idea.narrative,
               idea.whyExists,
               idea.whyWins,
-              idea.targetAudience,
-              idea.comparableProjects,
+              idea.howItWorks,
             ];
             total = fields.length;
             completed = fields.filter(Boolean).length;

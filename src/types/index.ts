@@ -64,8 +64,7 @@ export interface ProjectIdea {
   narrative: string | null;
   whyExists: string | null;
   whyWins: string | null;
-  targetAudience: string | null;
-  comparableProjects: string | null;
+  howItWorks: string | null;
   updatedAt: Date;
 }
 
