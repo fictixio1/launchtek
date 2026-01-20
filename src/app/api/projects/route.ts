@@ -42,7 +42,7 @@ export async function GET() {
   } catch (error) {
     console.error("Error fetching projects:", error);
     return NextResponse.json(
-      { error: "Failed to fetch projects" },
+      { error: "Failed to fetch projects", details: error instanceof Error ? error.message : String(error) },
       { status: 500 }
     );
   }
