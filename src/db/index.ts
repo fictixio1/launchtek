@@ -14,7 +14,7 @@ function getDb() {
     }
 
     const queryClient = postgres(connectionString, {
-      ssl: "require",
+      ssl: { rejectUnauthorized: false },
       max: 1,
     });
 
