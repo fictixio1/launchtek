@@ -9,7 +9,7 @@ import { useProjects, useCreateProject, useCompleteLaunch } from "@/hooks/usePro
 import { useStats } from "@/hooks/useStats";
 import { Stage, Priority, LaunchCompletionInput } from "@/types";
 
-export default function AppLayout({ children }: { children: React.ReactNode }) {
+export function AppShell({ children }: { children: React.ReactNode }) {
   const { data: projects = [] } = useProjects();
   const { data: stats } = useStats();
   const createProject = useCreateProject();
