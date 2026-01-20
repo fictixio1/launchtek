@@ -6,7 +6,6 @@ import {
   ExternalLink,
   Rocket,
   Archive,
-  MoreVertical,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Select } from "@/components/ui/select";

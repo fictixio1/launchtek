@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { db } from "@/db";
-import { projects, projectPnl } from "@/db/schema";
-import { eq, sql } from "drizzle-orm";
+import { projects } from "@/db/schema";
+import { eq } from "drizzle-orm";
 
 // GET /api/stats - Get global PNL statistics
 export async function GET() {

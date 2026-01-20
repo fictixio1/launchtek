@@ -7,7 +7,7 @@ import { Flame, Moon } from "lucide-react";
 import { cn, isActivityRecent } from "@/lib/utils";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
-import { Project, Tag } from "@/types";
+import { Project } from "@/types";
 
 interface ProjectCardProps {
   project: Project;

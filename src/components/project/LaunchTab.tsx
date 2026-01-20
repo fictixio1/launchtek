@@ -5,7 +5,6 @@ import { Rocket, Check } from "lucide-react";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Project, ProjectLaunch } from "@/types";
 
 interface LaunchTabProps {

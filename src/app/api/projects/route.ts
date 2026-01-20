@@ -7,8 +7,6 @@ import {
   projectWebsites,
   projectX,
   projectLaunches,
-  projectTags,
-  tags,
 } from "@/db/schema";
 import { eq } from "drizzle-orm";
 

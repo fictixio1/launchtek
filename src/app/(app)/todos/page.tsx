@@ -2,10 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { Plus, Trash2, Check, Circle, Filter } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Trash2, Check, Circle } from "lucide-react";
 import { Select } from "@/components/ui/select";
 import { useTasks, useUpdateTask, useDeleteTask } from "@/hooks/useTasks";
 import { Task, Priority, PRIORITIES } from "@/types";

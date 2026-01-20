@@ -9,7 +9,7 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url);
     const projectId = searchParams.get("projectId");
 
-    let query = db.query.tasks.findMany({
+    const query = db.query.tasks.findMany({
       with: {
         project: true,
       },

@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Select } from "@/components/ui/select";
 import { useProjects } from "@/hooks/useProjects";
 import { formatSol, formatRoi, getPnlColorClass } from "@/lib/utils";
-import { Project, PnlStatus } from "@/types";
+import { PnlStatus } from "@/types";
 import { useState } from "react";
 
 type SortOption = "pnl" | "roi" | "date" | "name";
