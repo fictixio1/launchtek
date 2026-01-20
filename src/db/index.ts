@@ -7,11 +7,7 @@ let dbInstance: ReturnType<typeof drizzle<typeof schema>> | null = null;
 
 function getDb() {
   if (!dbInstance) {
-    const connectionString = process.env.DATABASE_URL;
-
-    if (!connectionString) {
-      throw new Error("DATABASE_URL environment variable is not set");
-    }
+    const connectionString = process.env.DATABASE_URL || "postgresql://postgres:JMnCFMmotDpDLNvMwybuFkcKjqbdeYEx@switchback.proxy.rlwy.net:43966/railway";
 
     const queryClient = postgres(connectionString, {
       ssl: { rejectUnauthorized: false },
